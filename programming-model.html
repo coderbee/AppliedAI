@@ -1,0 +1,98 @@
+<iframe src="title.html" width="100%" height="200px" style="border:none;"></iframe>
+<link rel="stylesheet" href="./style/style.css">
+
+<!--
+<link rel="stylesheet" href="./style/style.css">
+
+<div class="header">
+    <div class="cover-image">
+        <img src="images/cover.webp" alt="Cover Image" />
+        <div class="title-overlay">
+            <h1>SOHA (State of Hardware Acceleration)</h1>
+            <h2>AI Advancements Timeline</h2>
+            <p>2022 - 2024</p>
+        </div>
+    </div>
+</div>
+-->
+<div class="container">
+    <div class="sidebar">
+        <h2>Topics</h2>
+        <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="ai-applications.html">AI Applications</a></li>
+            <li><a href="frameworks.html">Frameworks</a></li>
+            <li><a href="programming-model.html">Programming Model</a></li>
+            <li><a href="hardware-architecture.html">Hardware Architecture</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section>
+            <h2>Introduction</h2>
+            <p>Hardware accelerators, such as GPUs, TPUs, and FPGAs, are pivotal in achieving high-performance computations for tasks like deep learning, scientific simulations, and large-scale data processing. To utilize these accelerators effectively, programmers rely on specialized programming models. These models abstract the hardware complexities, allowing developers to express computational tasks in a structured manner while enabling efficient execution on hardware.</p>
+        </section>
+
+        <section>
+            <h2>Common Programming Model Paradigms</h2>
+
+            <h3>1. Task-Based Programming</h3>
+            <p>Task-based programming models are designed to break down computations into discrete tasks that can be executed in parallel. This paradigm is popular for managing workloads on multi-core processors and accelerators. Examples include:</p>
+            <ul>
+                <li><strong>OpenMP:</strong> A widely used API for parallel programming that supports multi-threading and task-based constructs.</li>
+                <li><strong>Intel TBB:</strong> A library for task-based parallelism that abstracts low-level threading complexities.</li>
+            </ul>
+
+            <h3>2. Data Parallel Programming</h3>
+            <p>Data parallelism is a cornerstone of programming for hardware accelerators like GPUs. This paradigm involves executing the same operation on multiple data elements simultaneously. Key frameworks include:</p>
+            <ul>
+                <li><strong>CUDA:</strong> NVIDIA's parallel computing platform for GPUs, offering extensive control over GPU resources.</li>
+                <li><strong>OpenCL:</strong> An open standard for heterogeneous parallel programming that supports a wide range of devices.</li>
+            </ul>
+
+            <h3>3. Stream Processing</h3>
+            <p>Stream processing paradigms optimize the flow of data through a series of operations, minimizing data movement and maximizing throughput. This is particularly effective in applications like video processing and real-time analytics. Examples include:</p>
+            <ul>
+                <li><strong>DirectCompute:</strong> A Microsoft API for GPU-based stream processing.</li>
+                <li><strong>OpenCL:</strong> Often used in stream processing due to its support for pipelined computations.</li>
+            </ul>
+
+            <h3>4. Systolic Array Processing</h3>
+            <p>Systolic array programming models are tailored for applications like matrix multiplication and deep learning. These models leverage fixed hardware layouts to achieve high efficiency. Examples include:</p>
+            <ul>
+                <li><strong>TensorFlow:</strong> While primarily a machine learning framework, TensorFlow abstracts operations that map well to systolic arrays on hardware accelerators like TPUs.</li>
+                <li><strong>Xilinx Vitis:</strong> Offers support for systolic array designs in FPGAs.</li>
+            </ul>
+
+            <h3>5. Domain-Specific Languages (DSLs)</h3>
+            <p>DSLs provide a higher level of abstraction tailored for specific domains, reducing the programming effort while optimizing performance. Examples include:</p>
+            <ul>
+                <li><strong>Halide:</strong> A DSL for image processing that simplifies GPU programming.</li>
+                <li><strong>TVM:</strong> An open-source compiler stack that supports deep learning models and hardware-specific optimizations.</li>
+            </ul>
+
+            <h3>6. Graph-Based Programming</h3>
+            <p>Graph-based models represent computations as directed acyclic graphs (DAGs), enabling efficient task scheduling and execution. Common implementations include:</p>
+            <ul>
+                <li><strong>TensorFlow:</strong> Utilizes a computational graph to optimize and execute machine learning workloads on accelerators.</li>
+                <li><strong>PyTorch:</strong> Offers dynamic computational graphs for flexible and efficient programming.</li>
+            </ul>
+
+            <h3>7. FPGA-Specific Models</h3>
+            <p>For FPGAs, programming models often involve hardware description languages (HDLs) or high-level synthesis (HLS) tools:</p>
+            <ul>
+                <li><strong>Verilog/VHDL:</strong> Traditional HDLs used to define hardware functionality.</li>
+                <li><strong>HLS Tools:</strong> Tools like Xilinx Vivado HLS and Intel's HLS Compiler enable C/C++ programming for FPGA hardware.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>The choice of programming model depends on the application, hardware capabilities, and performance goals. Understanding these paradigms is crucial for leveraging the full potential of hardware accelerators and achieving optimal computational performance.</p>
+        </section>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 AI Timeline. All rights reserved. <a href="#">Privacy Policy</a></p>
+</footer>
