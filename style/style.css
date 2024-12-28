@@ -1,3 +1,37 @@
+.animated-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    border-right: 0.15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.em;
+    width: 0;
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+
+
 
 body {
     font-family: Arial, sans-serif;
